@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'author',
     'profiles',
     'categories',
+    'posts',
 ]
 
 MIDDLEWARE = [
