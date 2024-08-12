@@ -466,6 +466,14 @@
         "documentation": {}
     },
     {
+        "label": "Post",
+        "importPath": "posts.models",
+        "description": "posts.models",
+        "isExtraImport": true,
+        "detail": "posts.models",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -631,7 +639,7 @@
         "kind": 5,
         "importPath": "posts.urls",
         "description": "posts.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.add_post, name='add_post')\n]",
+        "peekOfCode": "urlpatterns = [\n    path('add/', views.add_post, name='add_post'),\n    path('edit/<int:id>', views.edit_post, name='edit_post'),\n    path('delete/<int:id>', views.delete_post, name='delete_post'),\n]",
         "detail": "posts.urls",
         "documentation": {}
     },
@@ -640,7 +648,25 @@
         "kind": 2,
         "importPath": "posts.views",
         "description": "posts.views",
-        "peekOfCode": "def add_post(request):\n    if request.method == 'POST':\n        post = forms.PostForm(request.POST)\n        if post.is_valid():\n            post.save()\n            return redirect('add_post')\n    else:\n        post = forms.PostForm()\n    return render(request, 'posts/post.html', {'post': post})",
+        "peekOfCode": "def add_post(request):\n    if request.method == 'POST':\n        post = forms.PostForm(request.POST)\n        if post.is_valid():\n            post.save()\n            return redirect('add_post')\n    else:\n        post = forms.PostForm()\n    return render(request, 'posts/post.html', {'post': post})\ndef edit_post(request, id):",
+        "detail": "posts.views",
+        "documentation": {}
+    },
+    {
+        "label": "edit_post",
+        "kind": 2,
+        "importPath": "posts.views",
+        "description": "posts.views",
+        "peekOfCode": "def edit_post(request, id):\n    post_forms = Post.objects.get(pk=id)\n    post = forms.PostForm(instance=post_forms)\n    if request.method == 'POST':\n        post = forms.PostForm(request.POST, instance=post_forms)\n        if post.is_valid():\n            post.save()\n            return redirect('home')\n    return render(request, 'posts/post.html', {'post': post})\ndef delete_post(request, id):",
+        "detail": "posts.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_post",
+        "kind": 2,
+        "importPath": "posts.views",
+        "description": "posts.views",
+        "peekOfCode": "def delete_post(request, id):\n    post_forms = Post.objects.get(pk=id)\n    post_forms.delete()\n    return redirect('home')",
         "detail": "posts.views",
         "documentation": {}
     },
@@ -892,7 +918,7 @@
         "kind": 2,
         "importPath": "simple_blog_website.views",
         "description": "simple_blog_website.views",
-        "peekOfCode": "def home(request):\n    return render(request, 'home.html')",
+        "peekOfCode": "def home(request):\n    data = Post.objects.all()\n    # for i in data:\n    #     for j in i.category.all():\n    #         print(j)\n    # print(data)\n    return render(request, 'home.html', {'data': data})",
         "detail": "simple_blog_website.views",
         "documentation": {}
     },
