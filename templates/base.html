@@ -14,6 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="{% static 'css/home/navbar.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/home/author.css' %}" />
   </head>
 
   <body>
@@ -34,11 +35,12 @@
       </label>
       <label class="logo">Blog Website</label>
       <ul>
-        <li><a class="active" href="#">HTML</a></li>
+        <li><a class="active" href="{% url 'home' %}">Home</a></li>
         <li><a href="/admin/">Admin</a></li>
-        <li><a href="#">JavaScript</a></li>
-        <li><a href="#">ReactJS</a></li>
-        <li><a href="#">NodeJS</a></li>
+        <li><a href="{% url 'add-author' %}">Add Author</a></li>
+        <li><a href="{% url 'add_profile' %}">Add Profiles</a></li>
+        <li><a href="{% url 'add_category' %}">Add Category</a></li>
+        <li><a href="{% url 'add_post' %}">Add Post</a></li>
       </ul>
     </nav>
     {% block content %} {% endblock %}

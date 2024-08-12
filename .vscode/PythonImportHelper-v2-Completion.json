@@ -184,6 +184,22 @@
         "documentation": {}
     },
     {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -272,7 +288,7 @@
         "documentation": {}
     },
     {
-        "label": "render",
+        "label": "redirect",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -301,6 +317,46 @@
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
         "documentation": {}
     },
     {
@@ -413,6 +469,15 @@
         "documentation": {}
     },
     {
+        "label": "AuthorForm",
+        "kind": 6,
+        "importPath": "author.forms",
+        "description": "author.forms",
+        "peekOfCode": "class AuthorForm(forms.ModelForm):\n    class Meta:\n        model = Author\n        fields = '__all__'",
+        "detail": "author.forms",
+        "documentation": {}
+    },
+    {
         "label": "Author",
         "kind": 6,
         "importPath": "author.models",
@@ -426,16 +491,16 @@
         "kind": 5,
         "importPath": "author.urls",
         "description": "author.urls",
-        "peekOfCode": "urlpatterns = [\n    path('add/', views.add_author, name='add_author')\n]",
+        "peekOfCode": "urlpatterns = [\n    path('add/', views.add_author, name='add-author')\n]",
         "detail": "author.urls",
         "documentation": {}
     },
     {
-        "label": "author",
+        "label": "add_author",
         "kind": 2,
         "importPath": "author.views",
         "description": "author.views",
-        "peekOfCode": "def author(request):\n    return render(request, 'author/author.html')",
+        "peekOfCode": "def add_author(request):\n    if request.method == \"POST\":\n        author_form = forms.AuthorForm(request.POST)\n        if author_form.is_valid():\n            author_form.save()\n            return redirect('add-author')\n    else:\n        author_form = forms.AuthorForm()\n    return render(request, 'author/author.html', {'forms': author_form})",
         "detail": "author.views",
         "documentation": {}
     },
@@ -476,6 +541,15 @@
         "documentation": {}
     },
     {
+        "label": "add_category",
+        "kind": 2,
+        "importPath": "categories.views",
+        "description": "categories.views",
+        "peekOfCode": "def add_category(request):\n    return render(request, 'categories/category.html')",
+        "detail": "categories.views",
+        "documentation": {}
+    },
+    {
         "label": "Migration",
         "kind": 6,
         "importPath": "posts.migrations.0001_initial",
@@ -512,6 +586,15 @@
         "documentation": {}
     },
     {
+        "label": "add_post",
+        "kind": 2,
+        "importPath": "posts.views",
+        "description": "posts.views",
+        "peekOfCode": "def add_post(request):\n    return render(request, 'posts/post.html')",
+        "detail": "posts.views",
+        "documentation": {}
+    },
+    {
         "label": "Migration",
         "kind": 6,
         "importPath": "profiles.migrations.0001_initial",
@@ -539,6 +622,15 @@
         "documentation": {}
     },
     {
+        "label": "ProfileForm",
+        "kind": 6,
+        "importPath": "profiles.forms",
+        "description": "profiles.forms",
+        "peekOfCode": "class ProfileForm(forms.ModelForm):\n    class Meta:\n        model = Profile\n        fields = '__all__'",
+        "detail": "profiles.forms",
+        "documentation": {}
+    },
+    {
         "label": "Profile",
         "kind": 6,
         "importPath": "profiles.models",
@@ -554,6 +646,15 @@
         "description": "profiles.urls",
         "peekOfCode": "urlpatterns = [\n    path('', views.add_profile, name='add_profile')\n]",
         "detail": "profiles.urls",
+        "documentation": {}
+    },
+    {
+        "label": "add_profile",
+        "kind": 2,
+        "importPath": "profiles.views",
+        "description": "profiles.views",
+        "peekOfCode": "def add_profile(request):\n    if request.method == 'POST':\n        profile_form = forms.ProfileForm(request.POST)\n        if profile_form.is_valid():\n            profile_form.save()\n            return redirect('add_profile')\n    else:\n        profile_form = forms.ProfileForm\n    return render(request, 'profiles/profile.html', {'profile': profile_form})",
+        "detail": "profiles.views",
         "documentation": {}
     },
     {
@@ -732,7 +833,7 @@
         "kind": 5,
         "importPath": "simple_blog_website.urls",
         "description": "simple_blog_website.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', views.home),\n    # path('author/', include('author.urls')),\n    # path('profile/', include('profiles.urls')),\n    # path('post/', include('posts.urls')),\n    # path('category/', include('categories.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', views.home, name='home'),\n    path('author/', include('author.urls')),\n    path('profile/', include('profiles.urls')),\n    path('post/', include('posts.urls')),\n    path('category/', include('categories.urls')),\n]",
         "detail": "simple_blog_website.urls",
         "documentation": {}
     },
