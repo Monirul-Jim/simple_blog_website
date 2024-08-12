@@ -200,6 +200,22 @@
         "documentation": {}
     },
     {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -304,7 +320,23 @@
         "documentation": {}
     },
     {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -523,6 +555,15 @@
         "documentation": {}
     },
     {
+        "label": "CategoryForm",
+        "kind": 6,
+        "importPath": "categories.forms",
+        "description": "categories.forms",
+        "peekOfCode": "class CategoryForm(forms.ModelForm):\n    class Meta:\n        model = Category\n        fields = '__all__'",
+        "detail": "categories.forms",
+        "documentation": {}
+    },
+    {
         "label": "Category",
         "kind": 6,
         "importPath": "categories.models",
@@ -545,7 +586,7 @@
         "kind": 2,
         "importPath": "categories.views",
         "description": "categories.views",
-        "peekOfCode": "def add_category(request):\n    return render(request, 'categories/category.html')",
+        "peekOfCode": "def add_category(request):\n    if request.method == 'POST':\n        category = forms.CategoryForm(request.POST)\n        if category.is_valid():\n            category.save()\n            return redirect('add_category')\n    else:\n        category = forms.CategoryForm()\n    return render(request, 'categories/category.html', {'category': category})",
         "detail": "categories.views",
         "documentation": {}
     },
@@ -565,6 +606,15 @@
         "description": "posts.apps",
         "peekOfCode": "class PostsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'posts'",
         "detail": "posts.apps",
+        "documentation": {}
+    },
+    {
+        "label": "PostForm",
+        "kind": 6,
+        "importPath": "posts.forms",
+        "description": "posts.forms",
+        "peekOfCode": "class PostForm(forms.ModelForm):\n    class Meta:\n        model = Post\n        fields = '__all__'",
+        "detail": "posts.forms",
         "documentation": {}
     },
     {
@@ -590,7 +640,7 @@
         "kind": 2,
         "importPath": "posts.views",
         "description": "posts.views",
-        "peekOfCode": "def add_post(request):\n    return render(request, 'posts/post.html')",
+        "peekOfCode": "def add_post(request):\n    if request.method == 'POST':\n        post = forms.PostForm(request.POST)\n        if post.is_valid():\n            post.save()\n            return redirect('add_post')\n    else:\n        post = forms.PostForm()\n    return render(request, 'posts/post.html', {'post': post})",
         "detail": "posts.views",
         "documentation": {}
     },
