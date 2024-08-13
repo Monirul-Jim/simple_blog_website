@@ -320,6 +320,14 @@
         "documentation": {}
     },
     {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "include",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -405,6 +413,14 @@
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
         "documentation": {}
     },
     {
@@ -783,6 +799,33 @@
         "documentation": {}
     },
     {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "signup.urls",
+        "description": "signup.urls",
+        "peekOfCode": "urlpatterns = [\n    path('signup/', views.signup, name='sign_up'),\n    path('login/', views.login, name='login'),\n]",
+        "detail": "signup.urls",
+        "documentation": {}
+    },
+    {
+        "label": "signup",
+        "kind": 2,
+        "importPath": "signup.views",
+        "description": "signup.views",
+        "peekOfCode": "def signup(request):\n    return render(request, 'signup/signup.html')\ndef login(request):\n    return render(request, 'signup/login.html')",
+        "detail": "signup.views",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "signup.views",
+        "description": "signup.views",
+        "peekOfCode": "def login(request):\n    return render(request, 'signup/login.html')",
+        "detail": "signup.views",
+        "documentation": {}
+    },
+    {
         "label": "application",
         "kind": 5,
         "importPath": "simple_blog_website.asgi",
@@ -958,7 +1001,7 @@
         "kind": 5,
         "importPath": "simple_blog_website.urls",
         "description": "simple_blog_website.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', views.home, name='home'),\n    path('author/', include('author.urls')),\n    path('profile/', include('profiles.urls')),\n    path('post/', include('posts.urls')),\n    path('category/', include('categories.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', views.home, name='home'),\n    path('author/', include('author.urls')),\n    path('profile/', include('profiles.urls')),\n    path('post/', include('posts.urls')),\n    path('category/', include('categories.urls')),\n    path('user-signup/', include('signup.urls')),\n]",
         "detail": "simple_blog_website.urls",
         "documentation": {}
     },
