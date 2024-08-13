@@ -112,6 +112,22 @@
         "documentation": {}
     },
     {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -184,11 +200,11 @@
         "documentation": {}
     },
     {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
         "isExtraImport": true,
-        "detail": "django",
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -213,6 +229,22 @@
         "description": "django",
         "isExtraImport": true,
         "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -353,6 +385,14 @@
     },
     {
         "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -731,6 +771,15 @@
         "description": "profiles.views",
         "peekOfCode": "def add_profile(request):\n    if request.method == 'POST':\n        profile_form = forms.ProfileForm(request.POST)\n        if profile_form.is_valid():\n            profile_form.save()\n            return redirect('add_profile')\n    else:\n        profile_form = forms.ProfileForm\n    return render(request, 'profiles/profile.html', {'profile': profile_form})",
         "detail": "profiles.views",
+        "documentation": {}
+    },
+    {
+        "label": "SignupConfig",
+        "kind": 6,
+        "importPath": "signup.apps",
+        "description": "signup.apps",
+        "peekOfCode": "class SignupConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'signup'",
+        "detail": "signup.apps",
         "documentation": {}
     },
     {
