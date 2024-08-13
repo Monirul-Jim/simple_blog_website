@@ -24,9 +24,8 @@ form p {
 }
 
 /* input[type="text"],
-input[type="select"],
-input[type="option"],
-textarea {
+textarea,
+select {
   width: 100%;
   padding: 10px;
   border: 1px solid #3f08f5;
@@ -34,6 +33,9 @@ textarea {
   font-size: 16px;
   transition: border-color 0.3s;
 } */
+
+input[type="email"],
+input[type="password"],
 input[type="text"],
 textarea,
 select {
@@ -63,4 +65,8 @@ textarea:focus {
 
 .submit-button:hover {
   background-color: #0056b3;
+}
+.success {
+  color: white;
+  background-color: green;
 }
