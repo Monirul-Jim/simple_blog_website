@@ -424,6 +424,14 @@
         "documentation": {}
     },
     {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -526,6 +534,38 @@
         "description": "django.contrib.auth.forms",
         "isExtraImport": true,
         "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
@@ -844,7 +884,7 @@
         "kind": 5,
         "importPath": "signup.urls",
         "description": "signup.urls",
-        "peekOfCode": "urlpatterns = [\n    path('signup/', views.signup, name='sign_up'),\n    path('login/', views.login, name='login'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('signup/', views.signup, name='sign_up'),\n    path('login/', views.user_login, name='login'),\n    path('user_profile/', views.profile, name='user_profile'),\n]",
         "detail": "signup.urls",
         "documentation": {}
     },
@@ -858,11 +898,20 @@
         "documentation": {}
     },
     {
-        "label": "login",
+        "label": "user_login",
         "kind": 2,
         "importPath": "signup.views",
         "description": "signup.views",
-        "peekOfCode": "def login(request):\n    return render(request, 'signup/login.html')",
+        "peekOfCode": "def user_login(request):\n    if request.method == 'POST':\n        form = AuthenticationForm(request=request, data=request.POST)\n        if form.is_valid():\n            name = form.cleaned_data['username']\n            user_pass = form.cleaned_data['password']\n            # is user is available in database\n            user = authenticate(username=name, password=user_pass)\n            if user is not None:\n                login(request, user)",
+        "detail": "signup.views",
+        "documentation": {}
+    },
+    {
+        "label": "profile",
+        "kind": 2,
+        "importPath": "signup.views",
+        "description": "signup.views",
+        "peekOfCode": "def profile(request):\n    return render(request, 'signup/userprofile.html', {'users': request.user})",
         "detail": "signup.views",
         "documentation": {}
     },

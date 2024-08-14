@@ -1,10 +1,12 @@
 {% extends 'base.html' %} {% block content %} {% load static %}
 <h1>Hello this is Login Form</h1>
 <div class="form-container">
-  <h1>User Login</h1>
-  <form method="POST">
-    {% csrf_token %} {{ forms.as_p }}
-    <button type="submit" class="submit-button">User Login</button>
+  <h1>Login</h1>
+  <form method="post" novalidate>
+    {% csrf_token %} {% for fm in forms %} {{fm.label_tag}} {{fm}}
+    <br />
+    {{fm.errors |striptags}} {% endfor %}
+    <button type="submit" class="submit-button">User Signup</button>
   </form>
 </div>
 
