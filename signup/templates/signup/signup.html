@@ -13,6 +13,7 @@
     {{fm.errors |striptags}} {% endfor %}
     <button type="submit" class="submit-button">User Signup</button>
   </form>
+  <small>Already Have an accoutn <a href="{% url 'login' %}">Login</a> </small>
 </div>
 
 {% endblock %}
