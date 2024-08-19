@@ -16,23 +16,7 @@
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -128,7 +112,7 @@
         "documentation": {}
     },
     {
-        "label": "admin",
+        "label": "messages",
         "importPath": "django.contrib",
         "description": "django.contrib",
         "isExtraImport": true,
@@ -208,14 +192,6 @@
         "documentation": {}
     },
     {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
         "label": "forms",
         "importPath": "django",
         "description": "django",
@@ -248,11 +224,91 @@
         "documentation": {}
     },
     {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
+        "label": "User",
+        "importPath": "django.contrib .auth.models",
+        "description": "django.contrib .auth.models",
         "isExtraImport": true,
-        "detail": "django",
+        "detail": "django.contrib .auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib .auth.models",
+        "description": "django.contrib .auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib .auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserChangeForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordChangeForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserChangeForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordChangeForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "SetPasswordForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
         "documentation": {}
     },
     {
@@ -285,22 +341,6 @@
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -424,22 +464,6 @@
         "documentation": {}
     },
     {
-        "label": "redirect",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
         "label": "HttpResponse",
         "importPath": "django.http",
         "description": "django.http",
@@ -480,92 +504,27 @@
         "documentation": {}
     },
     {
-        "label": "HttpResponse",
-        "importPath": "django.http",
-        "description": "django.http",
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
         "isExtraImport": true,
-        "detail": "django.http",
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
-        "label": "django.db.models.deletion",
-        "kind": 6,
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
         "isExtraImport": true,
-        "importPath": "django.db.models.deletion",
-        "description": "django.db.models.deletion",
-        "detail": "django.db.models.deletion",
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
-        "label": "Category",
-        "importPath": "categories.models",
-        "description": "categories.models",
+        "label": "update_session_auth_hash",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
         "isExtraImport": true,
-        "detail": "categories.models",
-        "documentation": {}
-    },
-    {
-        "label": "Author",
-        "importPath": "author.models",
-        "description": "author.models",
-        "isExtraImport": true,
-        "detail": "author.models",
-        "documentation": {}
-    },
-    {
-        "label": "Author",
-        "importPath": "author.models",
-        "description": "author.models",
-        "isExtraImport": true,
-        "detail": "author.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "UserCreationForm",
-        "importPath": "django.contrib.auth.forms",
-        "description": "django.contrib.auth.forms",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.forms",
-        "documentation": {}
-    },
-    {
-        "label": "UserChangeForm",
-        "importPath": "django.contrib.auth.forms",
-        "description": "django.contrib.auth.forms",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.forms",
-        "documentation": {}
-    },
-    {
-        "label": "AuthenticationForm",
-        "importPath": "django.contrib.auth.forms",
-        "description": "django.contrib.auth.forms",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.forms",
-        "documentation": {}
-    },
-    {
-        "label": "PasswordChangeForm",
-        "importPath": "django.contrib.auth.forms",
-        "description": "django.contrib.auth.forms",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.forms",
-        "documentation": {}
-    },
-    {
-        "label": "SetPasswordForm",
-        "importPath": "django.contrib.auth.forms",
-        "description": "django.contrib.auth.forms",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.forms",
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
@@ -598,6 +557,47 @@
         "description": "django.contrib.auth",
         "isExtraImport": true,
         "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "categories.models",
+        "description": "categories.models",
+        "isExtraImport": true,
+        "detail": "categories.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -660,6 +660,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "author.migrations.0002_delete_author",
+        "description": "author.migrations.0002_delete_author",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('author', '0001_initial'),\n        ('posts', '0002_alter_post_author'),\n    ]\n    operations = [\n        migrations.DeleteModel(\n            name='Author',\n        ),\n    ]",
+        "detail": "author.migrations.0002_delete_author",
+        "documentation": {}
+    },
+    {
         "label": "AuthorConfig",
         "kind": 6,
         "importPath": "author.apps",
@@ -669,21 +678,21 @@
         "documentation": {}
     },
     {
-        "label": "AuthorForm",
+        "label": "RegistrationForm",
         "kind": 6,
         "importPath": "author.forms",
         "description": "author.forms",
-        "peekOfCode": "class AuthorForm(forms.ModelForm):\n    class Meta:\n        model = Author\n        fields = '__all__'",
+        "peekOfCode": "class RegistrationForm(UserCreationForm):\n    first_name = forms.CharField(\n        widget=forms.TextInput(attrs={'id': 'required'}))\n    last_name = forms.CharField(\n        widget=forms.TextInput(attrs={'id': 'required'}))\n    class Meta:\n        model = User\n        fields = ['username', 'first_name', 'last_name',\n                  'email', 'password1', 'password2']\nclass ChangeUserFormData(UserChangeForm):",
         "detail": "author.forms",
         "documentation": {}
     },
     {
-        "label": "Author",
+        "label": "ChangeUserFormData",
         "kind": 6,
-        "importPath": "author.models",
-        "description": "author.models",
-        "peekOfCode": "class Author(models.Model):\n    name = models.CharField(max_length=100)\n    bio = models.TextField()\n    phone_no = models.CharField(max_length=12)\n    def __str__(self):\n        return self.name",
-        "detail": "author.models",
+        "importPath": "author.forms",
+        "description": "author.forms",
+        "peekOfCode": "class ChangeUserFormData(UserChangeForm):\n    password = None\n    class Meta:\n        model = User\n        fields = ['username', 'first_name', 'last_name', 'email']",
+        "detail": "author.forms",
         "documentation": {}
     },
     {
@@ -691,16 +700,43 @@
         "kind": 5,
         "importPath": "author.urls",
         "description": "author.urls",
-        "peekOfCode": "urlpatterns = [\n    path('add/', views.add_author, name='add-author')\n]",
+        "peekOfCode": "urlpatterns = [\n    path('register/', views.register, name='register'),\n    path('login/', views.user_login, name='user_login'),\n    path('profile/', views.profile, name='profile'),\n    path('pass-change/', views.pass_change, name='pass_change'),\n]",
         "detail": "author.urls",
         "documentation": {}
     },
     {
-        "label": "add_author",
+        "label": "register",
         "kind": 2,
         "importPath": "author.views",
         "description": "author.views",
-        "peekOfCode": "def add_author(request):\n    if request.method == \"POST\":\n        author_form = forms.AuthorForm(request.POST)\n        if author_form.is_valid():\n            author_form.save()\n            return redirect('add-author')\n    else:\n        author_form = forms.AuthorForm()\n    return render(request, 'author/author.html', {'forms': author_form})",
+        "peekOfCode": "def register(request):\n    if request.method == 'POST':\n        register_form = RegistrationForm(request.POST)\n        if register_form.is_valid():\n            messages.success(request, 'Account Created Successfully')\n            register_form.save()\n    else:\n        register_form = RegistrationForm()\n    return render(request, 'author/author.html', {'forms': register_form, 'type': 'Register'})\ndef user_login(request):",
+        "detail": "author.views",
+        "documentation": {}
+    },
+    {
+        "label": "user_login",
+        "kind": 2,
+        "importPath": "author.views",
+        "description": "author.views",
+        "peekOfCode": "def user_login(request):\n    if request.method == 'POST':\n        form = AuthenticationForm(request, request.POST)\n        if form.is_valid():\n            name = form.cleaned_data['username']\n            user_pass = form.cleaned_data['password']\n            user = authenticate(username=name, password=user_pass)\n            if user is not None:\n                login(request, user)\n                messages.success(request, 'Account Login Successfully')",
+        "detail": "author.views",
+        "documentation": {}
+    },
+    {
+        "label": "profile",
+        "kind": 2,
+        "importPath": "author.views",
+        "description": "author.views",
+        "peekOfCode": "def profile(request):\n    if request.method == 'POST':\n        profile_form = ChangeUserFormData(request.POST, instance=request.user)\n        if profile_form.is_valid():\n            messages.success(request, 'Profile Updated Successfully')\n            profile_form.save()\n            return redirect('profile')\n    else:\n        profile_form = ChangeUserFormData(instance=request.user)\n    return render(request, 'author/profile.html', {'forms': profile_form})",
+        "detail": "author.views",
+        "documentation": {}
+    },
+    {
+        "label": "pass_change",
+        "kind": 2,
+        "importPath": "author.views",
+        "description": "author.views",
+        "peekOfCode": "def pass_change(request):\n    if request.method == 'POST':\n        form = PasswordChangeForm(request.user, data=request.POST)\n        if form.is_valid():\n            form.save()\n            messages.success(request, 'Password Updated Successfully')\n            update_session_auth_hash(request, form.user)\n            return redirect('profile')\n    else:\n        form = PasswordChangeForm(user=request.user)",
         "detail": "author.views",
         "documentation": {}
     },
@@ -768,6 +804,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "posts.migrations.0002_alter_post_author",
+        "description": "posts.migrations.0002_alter_post_author",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('posts', '0001_initial'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='post',\n            name='author',\n            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL),",
+        "detail": "posts.migrations.0002_alter_post_author",
+        "documentation": {}
+    },
+    {
         "label": "PostsConfig",
         "kind": 6,
         "importPath": "posts.apps",
@@ -790,7 +835,7 @@
         "kind": 6,
         "importPath": "posts.models",
         "description": "posts.models",
-        "peekOfCode": "class Post(models.Model):\n    name = models.CharField(max_length=50)\n    content = models.TextField()\n    category = models.ManyToManyField(Category)\n    # models.cascade is use for  when a author delete his profile then also delete all post\n    author = models.ForeignKey(Author, on_delete=models.CASCADE)\n    def __str__(self):\n        return self.name",
+        "peekOfCode": "class Post(models.Model):\n    name = models.CharField(max_length=50)\n    content = models.TextField()\n    category = models.ManyToManyField(Category)\n    # models.cascade is use for  when a author delete his profile then also delete all post\n    author = models.ForeignKey(User, on_delete=models.CASCADE)\n    def __str__(self):\n        return self.name",
         "detail": "posts.models",
         "documentation": {}
     },
@@ -828,69 +873,6 @@
         "description": "posts.views",
         "peekOfCode": "def delete_post(request, id):\n    post_forms = Post.objects.get(pk=id)\n    post_forms.delete()\n    return redirect('home')",
         "detail": "posts.views",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "profiles.migrations.0001_initial",
-        "description": "profiles.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Profile',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100)),",
-        "detail": "profiles.migrations.0001_initial",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "profiles.migrations.0002_profile_author",
-        "description": "profiles.migrations.0002_profile_author",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('author', '0001_initial'),\n        ('profiles', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='profile',\n            name='author',\n            field=models.OneToOneField(default=None, on_delete=django.db.models.deletion.CASCADE, to='author.author'),",
-        "detail": "profiles.migrations.0002_profile_author",
-        "documentation": {}
-    },
-    {
-        "label": "ProfilesConfig",
-        "kind": 6,
-        "importPath": "profiles.apps",
-        "description": "profiles.apps",
-        "peekOfCode": "class ProfilesConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'profiles'",
-        "detail": "profiles.apps",
-        "documentation": {}
-    },
-    {
-        "label": "ProfileForm",
-        "kind": 6,
-        "importPath": "profiles.forms",
-        "description": "profiles.forms",
-        "peekOfCode": "class ProfileForm(forms.ModelForm):\n    class Meta:\n        model = Profile\n        fields = '__all__'",
-        "detail": "profiles.forms",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "kind": 6,
-        "importPath": "profiles.models",
-        "description": "profiles.models",
-        "peekOfCode": "class Profile(models.Model):\n    name = models.CharField(max_length=100)\n    about = models.TextField()\n    author = models.OneToOneField(\n        Author, on_delete=models.CASCADE, default=None)\n    def __str__(self):\n        return self.name",
-        "detail": "profiles.models",
-        "documentation": {}
-    },
-    {
-        "label": "urlpatterns",
-        "kind": 5,
-        "importPath": "profiles.urls",
-        "description": "profiles.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.add_profile, name='add_profile')\n]",
-        "detail": "profiles.urls",
-        "documentation": {}
-    },
-    {
-        "label": "add_profile",
-        "kind": 2,
-        "importPath": "profiles.views",
-        "description": "profiles.views",
-        "peekOfCode": "def add_profile(request):\n    if request.method == 'POST':\n        profile_form = forms.ProfileForm(request.POST)\n        if profile_form.is_valid():\n            profile_form.save()\n            return redirect('add_profile')\n    else:\n        profile_form = forms.ProfileForm\n    return render(request, 'profiles/profile.html', {'profile': profile_form})",
-        "detail": "profiles.views",
         "documentation": {}
     },
     {
@@ -1033,7 +1015,7 @@
         "kind": 5,
         "importPath": "simple_blog_website.settings",
         "description": "simple_blog_website.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'author',\n    'profiles',\n    'categories',",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'author',\n    'categories',\n    'posts',",
         "detail": "simple_blog_website.settings",
         "documentation": {}
     },
@@ -1061,6 +1043,15 @@
         "importPath": "simple_blog_website.settings",
         "description": "simple_blog_website.settings",
         "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': ['templates',],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "simple_blog_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_URL",
+        "kind": 5,
+        "importPath": "simple_blog_website.settings",
+        "description": "simple_blog_website.settings",
+        "peekOfCode": "LOGIN_URL = '/author/login'\nWSGI_APPLICATION = 'simple_blog_website.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}",
         "detail": "simple_blog_website.settings",
         "documentation": {}
     },
@@ -1159,7 +1150,7 @@
         "kind": 5,
         "importPath": "simple_blog_website.urls",
         "description": "simple_blog_website.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', views.home, name='home'),\n    path('author/', include('author.urls')),\n    path('profile/', include('profiles.urls')),\n    path('post/', include('posts.urls')),\n    path('category/', include('categories.urls')),\n    path('user-signup/', include('signup.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', views.home, name='home'),\n    path('author/', include('author.urls')),\n    path('post/', include('posts.urls')),\n    path('category/', include('categories.urls')),\n]",
         "detail": "simple_blog_website.urls",
         "documentation": {}
     },

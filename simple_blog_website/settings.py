@@ -38,10 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'author',
-    'profiles',
     'categories',
     'posts',
-    'signup',
 ]
 
 MIDDLEWARE = [
@@ -71,7 +69,7 @@ TEMPLATES = [
         },
     },
 ]
-
+LOGIN_URL = '/author/login'
 WSGI_APPLICATION = 'simple_blog_website.wsgi.application'
 
 
